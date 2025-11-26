@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      
 
 jobs:
   hello_world_job:
@@ -12,3 +13,9 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+      - name: Show Date
+        run: |
+            date    
+      - name: Show List of Virtual env
+        run: |
+          ls -l 
